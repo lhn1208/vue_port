@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@import url("animation.css");
+@import url("variation.css");
+
+/* @font-face { font-family:'SpoqaHanSans'; src:url('@/assets/font/SpoqaHanSansLight.woff') format('woff');font-style:normal;font-weight:100;}
+@font-face { font-family:'SpoqaHanSans'; src:url('@/assets/font/SpoqaHanSansRegular.woff') format('woff');font-style:normal;font-weight:400;}
+@font-face{font-family:'SpoqaHanSans';src:url('@/assets/font/SpoqaHanSansBold.woff') format('woff');font-style:normal;font-weight:500;} */
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,option,blockquote,th,td,input,select,textarea,button,figure,section,article,main,aside,nav,header,footer,figcaption {margin:0;padding:0}
+fieldset,img {border:0 none}
+img {vertical-align:top; max-width: 100%;}
+dl,ul,ol,menu,li {list-style:none}
+blockquote,q {quotes:none}
+blockquote:before,blockquote:after,q:before,q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+input::-ms-clear {display:none}
+input[type="text"],
+input[type="password"] {display:inline-block;height:29px;padding:5px 10px 4px;border:1px solid #e3e5e8;box-sizing:border-box;}
+input[type="radio"],
+input[type="checkbox"],
+label {cursor:pointer;}
+button {border:0 none;background-color:transparent;cursor:pointer}
+textarea {width:100%;padding:20px;border:0;border:1px solid #e3e5e8;box-sizing:border-box;resize:none;}
+table {table-layout:fixed;width:100%;border-collapse:collapse;border-spacing:0}
+caption, legend {font-size:0;line-height:0;visibility:hidden}
+body {position:relative;background-color:#fff}
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:dotum,"돋움",sans-serif;color:#666}
+a {color:#666;text-decoration:none; color: #000;}
+a:active,a:hover {text-decoration:none;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+main {display:block}
+::-webkit-input-placeholder {color:#aaa;}
+::-moz-placeholder {color:#aaa;}
+:-ms-input-placeholder {color:#aaa;}
+:-moz-placeholder {color:#aaa;}
+
+/* common */
+body{font-family: "SpoqaHanSans",sans-serif; font-weight: 400; color: #000;}/*"맑은고딕",MalgunGothic,sans-serif*/
+button, a{font-family: var(--body-font);}
+#Index{margin:0;padding:0; position:relative;z-index:9999; text-align: center;}/* 스킵네비게이션 */
+#Index a{position:absolute;top:-200px; left:0;width:100%; line-height: 30px; background-color: #000; color: #fff; } 
+#Index a:focus, #Index a:active{top: 0;}
+
+*{transition: all .4s ease;}
+.contents_with{max-width: 1200px; width: 100%; margin:0 auto; position: relative;}
+section h2{padding:var(--content-pd) 20px; color: #fff; font-size: 38px; box-sizing: border-box;}
+@media (max-width: 1024px){
+    .contents_with{width: 96vw;}
+}
+@media (max-width: 767px){
+    section h2{padding: 30px 20px; font-size: 26px;}
+}
